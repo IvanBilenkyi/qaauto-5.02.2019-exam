@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 import static java.lang.Thread.sleep;
 
-public class SearchResultSecondPage extends BasePage {
+public class SearchResultsSecondPage extends BasePage {
 
     @FindBy(xpath = "//div[contains(text(),'Сторінка 2') or contains(text(),'Страница 2') or contains(text(),'Page 2')]")
     private WebElement secondPageIndicator;
@@ -15,7 +15,7 @@ public class SearchResultSecondPage extends BasePage {
     @FindBy(xpath = "//a//h3[contains(text(),'Selenium') or contains(text(),'selenium')]")
     private List<WebElement> googleSecondSearchResults;
 
-    public SearchResultSecondPage(WebDriver driver) {
+    public SearchResultsSecondPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
